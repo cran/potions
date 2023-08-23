@@ -7,9 +7,9 @@ knitr::opts_chunk$set(
 ## -----------------------------------------------------------------------------
 library(potions)
 
-brew(x == 1)
+brew(x = 1)
 
-paste0("The value of x is ", pour(x))
+paste0("The value of x is ", pour("x"))
 
 drain()
 
@@ -19,9 +19,9 @@ print(pi)
 
 ## -----------------------------------------------------------------------------
 library(potions)
-brew(digits == 3)
+brew(digits = 3)
 
-print(pi, digits = pour(digits)) # using potions
+print(pi, digits = pour("digits")) # using potions
 print(pi) # default is unaffected
 
 ## ----eval = FALSE-------------------------------------------------------------
